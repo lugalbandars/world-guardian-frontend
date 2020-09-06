@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container {
+  height: 100vh;
+  width: 100vw;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+tbody, thead {
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-label, .form-check-label {
+  color: white;
+}
+
+.world-number-th {
+  width: 15%;
+}
+
+.online-players-th {
+  width: 15%;
+}
+
+.country-th {
+  width: 20%;
+}
+
+.type-th {
+  width: 15%;
+}
+
+.activity-th {
+  width: 29%;
+}
+
+.is-pvp-th {
+  width: 11%;
+}
+
+.is-pvp-tr {
+  text-align: center;
 }
