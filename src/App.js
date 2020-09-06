@@ -101,7 +101,7 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {worldData && worldData.worlds && worldData.worlds.map((item) => (<tr><td>{item.number}</td><td>{item.player_count}</td><td>{item.country}</td><td>{item.type}</td><td>{item.activity}</td><td className="is-pvp-tr">{item.pvp ? <img src={skull} alt='pvp world' /> : ''}</td></tr>))}
+            {worldData && worldData.worlds && worldData.worlds.map((item) => (<tr key={item.number}><td>{item.number}</td><td>{item.player_count}</td><td>{item.country}</td><td>{item.type}</td><td>{item.activity}</td><td className="is-pvp-tr">{item.pvp ? <img src={skull} alt='pvp world' /> : ''}</td></tr>))}
           </tbody>
         </Table>
       </div>
